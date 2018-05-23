@@ -1,0 +1,7 @@
+{
+  "root": true,
+  "extends": "eslint:recommended",
+  "plugins": [
+    "ignore-generated"
+  ]
+}

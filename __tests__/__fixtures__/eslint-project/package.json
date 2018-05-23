@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "eslint": "^4.0.0",
+    "eslint-plugin-ignore-generated": "link:../../.."
+  }
+}

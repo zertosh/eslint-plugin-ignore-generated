@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-ignore-generated",
+  "version": "0.0.0",
+  "description": "Silently swallow ESLint issues in files with @generated",
+  "keywords": [
+    "eslint",
+    "eslint-plugin"
+  ],
+  "license": "MIT",
+  "author": "Andres Suarez <zertosh@gmail.com>",
+  "files": [
+    "eslint-plugin-ignore-generated.js"
+  ],
+  "main": "eslint-plugin-ignore-generated.js",
+  "repository": "https://github.com/zertosh/eslint-plugin-ignore-generated",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "jest": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/__fixtures__/"
+    ],
+    "watchman": false
+  }
+}
