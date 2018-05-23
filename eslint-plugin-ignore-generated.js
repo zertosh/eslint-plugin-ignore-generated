@@ -1,24 +1,27 @@
 'use strict';
 
-let isGenerated = null;
+let ignoreFile = null;
 
 const processor = {
   preprocess(text/*, filename*/) {
-    if (text.includes('@' + 'generated')) {
-      isGenerated = true;
+    if (
+      text.includes('@' + 'generated') ||
+      text.includes('@' + 'nolint')
+    ) {
+      ignoreFile = true;
       return [''];
     } else {
-      isGenerated = false;
+      ignoreFile = false;
       return [text];
     }
   },
 
   postprocess(messages/*, filename*/) {
-    if (isGenerated === true) {
-      isGenerated = null;
+    if (ignoreFile === true) {
+      ignoreFile = null;
       return [];
     } else {
-      isGenerated = null;
+      ignoreFile = null;
       return messages[0];
     }
   },

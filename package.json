@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-ignore-generated",
   "version": "1.0.1",
-  "description": "Silently swallow ESLint issues in files with @generated",
+  "description": "Silently swallow ESLint issues in files with @generated or @nolint",
   "keywords": [
     "eslint",
     "eslint-plugin"
