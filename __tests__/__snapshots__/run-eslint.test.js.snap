@@ -7,10 +7,7 @@ exports[`works with eslint 4.x 2`] = `
 /__fixtures__/eslint-project/non-generated-file.js
   3:1  error  'this_variable_should_be_an_error' is not defined  no-undef
 
-/__fixtures__/eslint-project/non-no-lint-file.js
-  3:1  error  'this_variable_should_be_an_error' is not defined  no-undef
-
-✖ 2 problems (2 errors, 0 warnings)
+✖ 1 problem (1 error, 0 warnings)
 
 "
 `;
