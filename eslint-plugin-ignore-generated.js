@@ -31,5 +31,7 @@ module.exports = {
     '.js': processor,
     '.jsx': processor,
     '.flow': processor,
+    '.ts': processor,
+    '.tsx': processor,
   },
 };
